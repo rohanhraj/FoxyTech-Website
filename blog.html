@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Read the latest insights on ERP systems, CRM platforms, mobile app development, and digital transformation at the FoxyTech Blog.">
+    <meta name="keywords"
+        content="tech blog, ERP trends, custom software, digital transformation insights, FoxyTech blog">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="FoxyTech Blog - Insights & Innovation">
+    <meta property="og:description"
+        content="Expert insights on custom software, ERP/CRM solutions, and digital growth strategies.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://foxytech.in/blog.html">
+
+    <title>FoxyTech Blog - Insights, Trends & News</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/FoxyTech-nav-Logo.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- GSAP & Lenis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+</head>
+
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo" aria-label="FoxyTech Home">
+                    <img src="assets/images/navbar-logo-light.png" alt="FoxyTech Logo" class="logo-light">
+                    <img src="assets/images/navbar-logo-dark.png" alt="FoxyTech Logo" class="logo-dark">
+                </a>
+
+                <nav class="nav" role="navigation" aria-label="Main navigation">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                        <li><a href="process.html" class="nav-link">Process</a></li>
+                        <li><a href="blog.html" class="nav-link active" aria-current="page">Blog</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+                </nav>
+
+                <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+            <li><a href="portfolio.html" class="mobile-nav-link">Portfolio</a></li>
+            <li><a href="process.html" class="mobile-nav-link">Process</a></li>
+            <li><a href="blog.html" class="mobile-nav-link active" aria-current="page">Blog</a></li>
+            <li><a href="about.html" class="mobile-nav-link">About</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-nav-cta">
+            <a href="contact.html" class="btn btn-primary btn-lg">Start Your Project</a>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="hero" style="min-height: 60vh;">
+            <canvas id="particles-canvas"></canvas>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <h1 class="hero-title animate animate-fade-up">Insights & <span class="text-gradient">Innovations</span>
+                </h1>
+                <p class="hero-subtitle animate animate-fade-up animate-delay-1">
+                    Expert perspectives on technology, business growth, and digital transformation.
+                </p>
+            </div>
+        </section>
+
+        <!-- Blog Grid Section -->
+        <section class="section" id="blog-grid">
+            <div class="container">
+                <div class="blog-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 2rem;">
+
+                    <!-- Blog Post 1 -->
+                    <article class="card blog-card animate animate-fade-up">
+                        <div class="blog-image"
+                            style="height: 240px; overflow: hidden; border-radius: var(--radius-lg) var(--radius-lg) 0 0;">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+                                alt="Custom Software vs Off-the-shelf"
+                                style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                        </div>
+                        <div class="card-content" style="padding: 2rem;">
+                            <div class="blog-meta"
+                                style="color: var(--color-gray-500); font-size: 0.9rem; margin-bottom: 0.5rem;">
+                                <span>December 28, 2025</span> • <span>Strategy</span>
+                            </div>
+                            <h3 style="margin-bottom: 1rem;">Why Custom Software Matters for Growing Businesses</h3>
+                            <p style="margin-bottom: 1.5rem; color: var(--color-gray-600);">
+                                Off-the-shelf solutions can only take you so far. Discover how custom software can
+                                unlock operational efficiency and scale with your vision.
+                            </p>
+                            <a href="blog/why-custom-software-matters.html" class="btn-link"
+                                style="color: var(--color-primary); font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                Read Article
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 2 - AI in Business -->
+                    <article class="card blog-card animate animate-fade-up animate-delay-1">
+                        <div class="blog-image"
+                            style="height: 240px; overflow: hidden; border-radius: var(--radius-lg) var(--radius-lg) 0 0;">
+                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop"
+                                alt="The Future of AI in Business"
+                                style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                        </div>
+                        <div class="card-content" style="padding: 2rem;">
+                            <div class="blog-meta"
+                                style="color: var(--color-gray-500); font-size: 0.9rem; margin-bottom: 0.5rem;">
+                                <span>December 29, 2025</span> • <span>Technology</span>
+                            </div>
+                            <h3 style="margin-bottom: 1rem;">The Future of AI in Business</h3>
+                            <p style="margin-bottom: 1.5rem; color: var(--color-gray-600);">
+                                How artificial intelligence is reshaping industries and creating unprecedented
+                                opportunities for growth.
+                            </p>
+                            <a href="blog/future-of-ai-in-business.html" class="btn-link"
+                                style="color: var(--color-primary); font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                Read Article
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 3 - Mobile App Guide -->
+                    <article class="card blog-card animate animate-fade-up animate-delay-2">
+                        <div class="blog-image"
+                            style="height: 240px; overflow: hidden; border-radius: var(--radius-lg) var(--radius-lg) 0 0;">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop"
+                                alt="Mobile App Development Guide"
+                                style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                        </div>
+                        <div class="card-content" style="padding: 2rem;">
+                            <div class="blog-meta"
+                                style="color: var(--color-gray-500); font-size: 0.9rem; margin-bottom: 0.5rem;">
+                                <span>December 29, 2025</span> • <span>Development</span>
+                            </div>
+                            <h3 style="margin-bottom: 1rem;">Mobile App Development Guide</h3>
+                            <p style="margin-bottom: 1.5rem; color: var(--color-gray-600);">
+                                From concept to launch: Everything you need to know about building a successful mobile
+                                application.
+                            </p>
+                            <a href="blog/mobile-app-development-guide.html" class="btn-link"
+                                style="color: var(--color-primary); font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                Read Article
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 4 - CRM vs ERP -->
+                    <article class="card blog-card animate animate-fade-up">
+                        <div class="blog-image"
+                            style="height: 240px; overflow: hidden; border-radius: var(--radius-lg) var(--radius-lg) 0 0;">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop"
+                                alt="CRM vs ERP: What do you need?"
+                                style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                        </div>
+                        <div class="card-content" style="padding: 2rem;">
+                            <div class="blog-meta"
+                                style="color: var(--color-gray-500); font-size: 0.9rem; margin-bottom: 0.5rem;">
+                                <span>December 29, 2025</span> • <span>Enterprise</span>
+                            </div>
+                            <h3 style="margin-bottom: 1rem;">CRM vs ERP: What Do You Need?</h3>
+                            <p style="margin-bottom: 1.5rem; color: var(--color-gray-600);">
+                                Understanding the differences and choosing the right system for your business.
+                            </p>
+                            <a href="blog/crm-vs-erp.html" class="btn-link"
+                                style="color: var(--color-primary); font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                Read Article
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 5 - Digital Transformation -->
+                    <article class="card blog-card animate animate-fade-up animate-delay-1">
+                        <div class="blog-image"
+                            style="height: 240px; overflow: hidden; border-radius: var(--radius-lg) var(--radius-lg) 0 0;">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=600&fit=crop"
+                                alt="Digital Transformation 101"
+                                style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                        </div>
+                        <div class="card-content" style="padding: 2rem;">
+                            <div class="blog-meta"
+                                style="color: var(--color-gray-500); font-size: 0.9rem; margin-bottom: 0.5rem;">
+                                <span>December 29, 2025</span> • <span>Strategy</span>
+                            </div>
+                            <h3 style="margin-bottom: 1rem;">Digital Transformation 101</h3>
+                            <p style="margin-bottom: 1.5rem; color: var(--color-gray-600);">
+                                A beginner's guide to understanding and embracing digital change for business success.
+                            </p>
+                            <a href="blog/digital-transformation-101.html" class="btn-link"
+                                style="color: var(--color-primary); font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                Read Article
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter CTA -->
+        <section class="section section-dark text-center">
+            <div class="container" style="max-width: 600px;">
+                <h2 style="margin-bottom: 1rem;">Stay Updated</h2>
+                <p style="margin-bottom: 2rem; color: var(--color-gray-300);">Subscribe to our newsletter for the latest
+                    tech insights and FoxyTech news.</p>
+                <form class="newsletter-form"
+                    style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                    <input type="email" placeholder="Your email address"
+                        style="padding: 0.75rem 1.5rem; border-radius: 50px; border: none; flex: 1; min-width: 250px;">
+                    <button type="submit" class="btn btn-primary magnetic">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <img src="assets/images/footer-logo.png" alt="FoxyTech" class="footer-logo">
+                    <p class="footer-tagline">Transforming businesses through innovative technology solutions. Your
+                        trusted
+                        partner for digital excellence.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="services.html" class="footer-link">Services</a></li>
+                        <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+                        <li><a href="blog.html" class="footer-link">Blog</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#enterprise" class="footer-link">ERP Solutions</a></li>
+                        <li><a href="services.html#enterprise" class="footer-link">CRM Systems</a></li>
+                        <li><a href="services.html#mobile" class="footer-link">Mobile Apps</a></li>
+                        <li><a href="services.html#digital" class="footer-link">Web Development</a></li>
+                        <li><a href="services.html#digital" class="footer-link">E-commerce</a></li>
+                        <li><a href="services.html#marketing" class="footer-link">SEO Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <div class="footer-contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>hello@foxytech.in</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        <span>+91 9141150551</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <span>Mon-Fri: 9am-6pm IST</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 FoxyTech. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/particles.js"></script>
+    <script src="js/effects.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/scroll-animations.js"></script>
+    <script>
+        // Simple hover effect specific to blog cards
+        const cards = document.querySelectorAll('.blog-card');
+        cards.forEach(card => {
+            const img = card.querySelector('img');
+            card.addEventListener('mouseenter', () => {
+                img.style.transform = 'scale(1.05)';
+            });
+            card.addEventListener('mouseleave', () => {
+                img.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+
+</html>

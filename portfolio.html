@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore FoxyTech's portfolio of successful projects including ERP systems, mobile apps, e-commerce platforms, and digital marketing campaigns.">
+
+    <title>Portfolio - FoxyTech Technology Solutions</title>
+
+    <link rel="canonical" href="https://foxytech.in/portfolio.html">
+
+    <!-- Open Graph & Social -->
+    <meta property="og:title" content="Portfolio - FoxyTech Projects">
+    <meta property="og:description"
+        content="Explore our latest work in ERP systems, mobile apps, and e-commerce solutions. See how we help businesses grow.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://foxytech.in/portfolio.html">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&h=630&fit=crop">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfolio - FoxyTech Projects">
+    <meta name="twitter:description"
+        content="See our success stories. Custom software solutions that drive real results.">
+    <meta name="twitter:image"
+        content="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&h=630&fit=crop">
+
+    <link rel="icon" type="image/png" href="assets/images/FoxyTech-nav-Logo.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .filter-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-3);
+            justify-content: center;
+            margin-bottom: var(--space-12);
+        }
+
+        .filter-btn {
+            padding: var(--space-3) var(--space-6);
+            border: 2px solid var(--color-light-gray);
+            border-radius: var(--radius-full);
+            font-weight: var(--weight-medium);
+            font-size: var(--text-sm);
+            transition: all var(--transition-base);
+            background: var(--color-white);
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--color-primary);
+            border-color: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-8);
+        }
+
+        @media (max-width: 1024px) {
+            .portfolio-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .portfolio-item {
+            border-radius: var(--radius-2xl);
+            overflow: hidden;
+            position: relative;
+            aspect-ratio: 4/3;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-slow);
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .portfolio-item-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(0deg, rgba(26, 40, 69, 0.95) 0%, transparent 60%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: var(--space-8);
+            opacity: 0;
+            transition: opacity var(--transition-base);
+        }
+
+        .portfolio-item:hover .portfolio-item-overlay {
+            opacity: 1;
+        }
+
+        .portfolio-item-overlay h3 {
+            color: var(--color-white);
+            font-size: var(--text-xl);
+            margin-bottom: var(--space-2);
+        }
+
+        .portfolio-item-overlay p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: var(--text-sm);
+            margin-bottom: var(--space-4);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo" aria-label="FoxyTech Home">
+                    <img src="assets/images/navbar-logo-light.png" alt="FoxyTech Logo" class="logo-light">
+                    <img src="assets/images/navbar-logo-dark.png" alt="FoxyTech Logo" class="logo-dark">
+                </a>
+                <nav class="nav" role="navigation" aria-label="Main navigation">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="portfolio.html" class="nav-link active" aria-current="page">Portfolio</a></li>
+                        <li><a href="process.html" class="nav-link">Process</a></li>
+                        <li><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+                </nav>
+                <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+            <li><a href="portfolio.html" class="mobile-nav-link">Portfolio</a></li>
+            <li><a href="process.html" class="mobile-nav-link">Process</a></li>
+            <li><a href="blog.html" class="mobile-nav-link">Blog</a></li>
+            <li><a href="about.html" class="mobile-nav-link">About</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-nav-cta">
+            <a href="contact.html" class="btn btn-primary btn-lg">Start Your Project</a>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="hero" style="min-height: 60vh;">
+            <canvas id="particles-canvas"></canvas>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <h1 class="hero-title animate animate-fade-up">Our <span class="text-gradient">Work</span></h1>
+                <p class="hero-subtitle animate animate-fade-up animate-delay-1">
+                    Explore how we've helped businesses transform through technology.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="filter-bar animate animate-fade-up">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="erp">ERP/CRM</button>
+                    <button class="filter-btn" data-filter="web">Websites</button>
+                    <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                    <button class="filter-btn" data-filter="marketing">Digital Marketing</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-item animate animate-fade-up" data-category="ecommerce">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=450&fit=crop"
+                            alt="RetailMax E-commerce">
+                        <div class="portfolio-item-overlay">
+                            <span class="portfolio-tag">E-commerce</span>
+                            <h3>RetailMax Online Store</h3>
+                            <p>300% increase in online sales</p>
+                            <a href="#" class="btn btn-primary" style="width: fit-content;">View Case Study</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item animate animate-fade-up animate-delay-1" data-category="erp">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=450&fit=crop"
+                            alt="ManufactPro ERP">
+                        <div class="portfolio-item-overlay">
+                            <span class="portfolio-tag">ERP System</span>
+                            <h3>ManufactPro Dashboard</h3>
+                            <p>50% reduction in processing time</p>
+                            <a href="#" class="btn btn-primary" style="width: fit-content;">View Case Study</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item animate animate-fade-up animate-delay-2" data-category="mobile">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=450&fit=crop"
+                            alt="HealthTrack App">
+                        <div class="portfolio-item-overlay">
+                            <span class="portfolio-tag">Mobile App</span>
+                            <h3>HealthTrack Fitness</h3>
+                            <p>10,000+ users in first month</p>
+                            <a href="#" class="btn btn-primary" style="width: fit-content;">View Case Study</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item animate animate-fade-up" data-category="web">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=450&fit=crop"
+                            alt="LawFirm Pro Website">
+                        <div class="portfolio-item-overlay">
+                            <span class="portfolio-tag">Corporate Website</span>
+                            <h3>LawFirm Pro</h3>
+                            <p>2x increase in lead generation</p>
+                            <a href="#" class="btn btn-primary" style="width: fit-content;">View Case Study</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item animate animate-fade-up animate-delay-1" data-category="erp">
+                        <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&h=450&fit=crop"
+                            alt="SupplyChain Manager">
+                        <div class="portfolio-item-overlay">
+                            <span class="portfolio-tag">ERP System</span>
+                            <h3>SupplyChain Manager</h3>
+                            <p>40% improvement in inventory accuracy</p>
+                            <a href="#" class="btn btn-primary" style="width: fit-content;">View Case Study</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item animate animate-fade-up animate-delay-2" data-category="marketing">
+                        <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600&h=450&fit=crop"
+                            alt="GrowthBoost SEO">
+                        <div class="portfolio-item-overlay">
+                            <span class="portfolio-tag">SEO Campaign</span>
+                            <h3>GrowthBoost Marketing</h3>
+                            <p>Page 1 rankings for 50+ keywords</p>
+                            <a href="#" class="btn btn-primary" style="width: fit-content;">View Case Study</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item animate animate-fade-up" data-category="mobile">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=450&fit=crop"
+                            alt="QuickPay App">
+                        <div class="portfolio-item-overlay">
+                            <span class="portfolio-tag">Mobile App</span>
+                            <h3>QuickPay Finance</h3>
+                            <p>4.8★ App Store rating</p>
+                            <a href="#" class="btn btn-primary" style="width: fit-content;">View Case Study</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item animate animate-fade-up animate-delay-1" data-category="ecommerce">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=450&fit=crop"
+                            alt="FashionHub Store">
+                        <div class="portfolio-item-overlay">
+                            <span class="portfolio-tag">E-commerce</span>
+                            <h3>FashionHub Store</h3>
+                            <p>$2M+ annual revenue</p>
+                            <a href="#" class="btn btn-primary" style="width: fit-content;">View Case Study</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item animate animate-fade-up animate-delay-2" data-category="web">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=450&fit=crop"
+                            alt="TechStart Website">
+                        <div class="portfolio-item-overlay">
+                            <span class="portfolio-tag">Corporate Website</span>
+                            <h3>TechStart Solutions</h3>
+                            <p>150% increase in organic traffic</p>
+                            <a href="#" class="btn btn-primary" style="width: fit-content;">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-gradient cta-section">
+            <div class="container">
+                <div class="animate animate-fade-up">
+                    <h2>Ready to Join Our Success Stories?</h2>
+                    <p>Let's create something amazing together</p>
+                    <a href="contact.html" class="btn btn-secondary btn-lg">Start Your Project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/images/footer-logo.png" alt="FoxyTech" class="footer-logo">
+                    <p class="footer-tagline">Transforming businesses through innovative technology solutions.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg></a>
+                        <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                </path>
+                            </svg></a>
+                        <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="services.html" class="footer-link">Services</a></li>
+                        <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+                        <li><a href="blog.html" class="footer-link">Blog</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#enterprise" class="footer-link">ERP Solutions</a></li>
+                        <li><a href="services.html#mobile" class="footer-link">Mobile Apps</a></li>
+                        <li><a href="services.html#digital" class="footer-link">Web Development</a></li>
+                        <li><a href="services.html#marketing" class="footer-link">SEO Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <div class="footer-contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>hello@foxytech.in</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        <span>+91 9141150551</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 FoxyTech. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+
+    <script src="js/particles.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/effects.js"></script>
+    <script src="js/scroll-animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

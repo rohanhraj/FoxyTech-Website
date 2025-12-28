@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn about FoxyTech's proven 7-step development process that ensures project success from discovery to ongoing support.">
+
+    <title>Our Process - FoxyTech Technology Solutions</title>
+
+    <link rel="canonical" href="https://foxytech.in/process.html">
+
+    <!-- Open Graph & Social -->
+    <meta property="og:title" content="Our Process - FoxyTech Development">
+    <meta property="og:description"
+        content="From discovery to deployment, learn about our agile 7-step development process that ensures project success.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://foxytech.in/process.html">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&h=630&fit=crop">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Our Process - FoxyTech Development">
+    <meta name="twitter:description"
+        content="Agile methodology, transparent reporting, and guaranteed quality. See how we work.">
+    <meta name="twitter:image"
+        content="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&h=630&fit=crop">
+
+    <link rel="icon" type="image/png" href="assets/images/FoxyTech-nav-Logo.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .process-detail {
+            display: grid;
+            gap: var(--space-16);
+        }
+
+        .process-phase {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: var(--space-8);
+            align-items: start;
+        }
+
+        @media (max-width: 640px) {
+            .process-phase {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .phase-number {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-2xl);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-size: var(--text-3xl);
+            font-weight: var(--weight-bold);
+            color: var(--color-white);
+        }
+
+        .phase-content h3 {
+            margin-bottom: var(--space-2);
+        }
+
+        .phase-duration {
+            color: var(--color-primary);
+            font-weight: var(--weight-medium);
+            font-size: var(--text-sm);
+            margin-bottom: var(--space-4);
+        }
+
+        .phase-content p {
+            margin-bottom: var(--space-6);
+        }
+
+        .phase-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-3);
+        }
+
+        @media (max-width: 768px) {
+            .phase-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .phase-list li {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-size: var(--text-sm);
+        }
+
+        .phase-list svg {
+            color: var(--color-primary);
+            flex-shrink: 0;
+        }
+
+        .benefits-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-6);
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .benefits-row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .benefit-box {
+            padding: var(--space-6);
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-md);
+        }
+
+        .benefit-box svg {
+            width: 40px;
+            height: 40px;
+            color: var(--color-primary);
+            margin-bottom: var(--space-4);
+        }
+
+        .benefit-box h4 {
+            font-size: var(--text-base);
+            margin-bottom: var(--space-2);
+        }
+
+        .benefit-box p {
+            font-size: var(--text-sm);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo" aria-label="FoxyTech Home">
+                    <img src="assets/images/navbar-logo-light.png" alt="FoxyTech Logo" class="logo-light">
+                    <img src="assets/images/navbar-logo-dark.png" alt="FoxyTech Logo" class="logo-dark">
+                </a>
+                <nav class="nav" role="navigation" aria-label="Main navigation">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                        <li><a href="process.html" class="nav-link active" aria-current="page">Process</a></li>
+                        <li><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+                </nav>
+                <button class="mobile-menu-btn"
+                    aria-label="Toggle menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+            <li><a href="portfolio.html" class="mobile-nav-link">Portfolio</a></li>
+            <li><a href="process.html" class="mobile-nav-link">Process</a></li>
+            <li><a href="blog.html" class="mobile-nav-link">Blog</a></li>
+            <li><a href="about.html" class="mobile-nav-link">About</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-nav-cta"><a href="contact.html" class="btn btn-primary btn-lg">Start Your Project</a></div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="hero" style="min-height: 60vh;">
+            <canvas id="particles-canvas"></canvas>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <h1 class="hero-title animate animate-fade-up">Our Proven <span class="text-gradient">Development
+                        Process</span></h1>
+                <p class="hero-subtitle animate animate-fade-up animate-delay-1">
+                    A systematic, transparent approach to bringing your vision to life.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="process-detail">
+                    <!-- Phase 1 -->
+                    <div class="process-phase animate animate-fade-up">
+                        <div class="phase-number">1</div>
+                        <div class="phase-content">
+                            <h3>Discovery & Consultation</h3>
+                            <span class="phase-duration">Duration: 1-2 weeks</span>
+                            <p>We begin every project by thoroughly understanding your business, goals, challenges, and
+                                users. This collaborative phase involves stakeholder interviews, requirements gathering,
+                                competitor analysis, and defining success metrics.</p>
+                            <ul class="phase-list">
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Stakeholder interviews</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Requirements documentation</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Competitor analysis</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Success metrics definition</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Phase 2 -->
+                    <div class="process-phase animate animate-fade-up">
+                        <div class="phase-number">2</div>
+                        <div class="phase-content">
+                            <h3>Strategy & Planning</h3>
+                            <span class="phase-duration">Duration: 1-2 weeks</span>
+                            <p>With a clear understanding of your needs, we create a comprehensive strategy and
+                                technical roadmap. This includes defining the information architecture, selecting the
+                                optimal technology stack, and creating detailed project timelines.</p>
+                            <ul class="phase-list">
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Technical architecture design</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Technology stack selection</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>User flow mapping</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Sprint planning</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Phase 3 -->
+                    <div class="process-phase animate animate-fade-up">
+                        <div class="phase-number">3</div>
+                        <div class="phase-content">
+                            <h3>Design & Prototyping</h3>
+                            <span class="phase-duration">Duration: 2-4 weeks</span>
+                            <p>Our design team creates intuitive, visually compelling interfaces that align with your
+                                brand and delight users. We create wireframes, high-fidelity designs, and interactive
+                                prototypes for your approval.</p>
+                            <ul class="phase-list">
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Wireframe creation</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>High-fidelity UI design</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Interactive prototypes</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Design system creation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Phase 4 -->
+                    <div class="process-phase animate animate-fade-up">
+                        <div class="phase-number">4</div>
+                        <div class="phase-content">
+                            <h3>Development & Build</h3>
+                            <span class="phase-duration">Duration: 6-16 weeks</span>
+                            <p>This is where your vision comes to life. Our development team builds your solution using
+                                clean, efficient, well-documented code following industry best practices. We work in
+                                agile sprints with regular demos.</p>
+                            <ul class="phase-list">
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Front-end development</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Back-end development</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>API integrations</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Regular sprint demos</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Phase 5 -->
+                    <div class="process-phase animate animate-fade-up">
+                        <div class="phase-number">5</div>
+                        <div class="phase-content">
+                            <h3>Testing & Quality Assurance</h3>
+                            <span class="phase-duration">Duration: 1-3 weeks</span>
+                            <p>Before launch, we conduct rigorous testing to ensure everything works flawlessly. Our QA
+                                process includes functional testing, cross-browser testing, performance testing, and
+                                security testing.</p>
+                            <ul class="phase-list">
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Functional testing</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Cross-browser testing</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Performance optimization</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Security audits</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Phase 6 -->
+                    <div class="process-phase animate animate-fade-up">
+                        <div class="phase-number">6</div>
+                        <div class="phase-content">
+                            <h3>Deployment & Launch</h3>
+                            <span class="phase-duration">Duration: 1 week</span>
+                            <p>Launch day is carefully orchestrated to ensure a smooth transition from development to
+                                production. We handle all technical aspects and provide comprehensive training for your
+                                team.</p>
+                            <ul class="phase-list">
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Production deployment</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Domain configuration</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Team training</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Launch monitoring</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Phase 7 -->
+                    <div class="process-phase animate animate-fade-up">
+                        <div class="phase-number">7</div>
+                        <div class="phase-content">
+                            <h3>Support & Optimization</h3>
+                            <span class="phase-duration">Duration: Ongoing</span>
+                            <p>Our commitment doesn't end at launch. We provide ongoing support to ensure your solution
+                                continues performing optimally with monitoring, updates, and continuous improvements.
+                            </p>
+                            <ul class="phase-list">
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>24/7 monitoring</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Security updates</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Performance optimization</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 12 2 2 4-4"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>Feature enhancements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-gray">
+            <div class="container">
+                <div class="section-header animate animate-fade-up">
+                    <h2>Why Our Process Works</h2>
+                </div>
+                <div class="benefits-row animate animate-fade-up">
+                    <div class="benefit-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                        <h4>Transparency</h4>
+                        <p>You're involved every step with regular updates</p>
+                    </div>
+                    <div class="benefit-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                            <path d="m9 12 2 2 4-4"></path>
+                        </svg>
+                        <h4>Quality</h4>
+                        <p>Multiple review and testing phases ensure excellence</p>
+                    </div>
+                    <div class="benefit-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 2v4"></path>
+                            <path d="m16.2 7.8 2.9-2.9"></path>
+                            <path d="M18 12h4"></path>
+                            <path d="m16.2 16.2 2.9 2.9"></path>
+                            <path d="M12 18v4"></path>
+                            <path d="m4.9 19.1 2.9-2.9"></path>
+                            <path d="M2 12h4"></path>
+                            <path d="m4.9 4.9 2.9 2.9"></path>
+                        </svg>
+                        <h4>Flexibility</h4>
+                        <p>Agile approach allows for adjustments based on feedback</p>
+                    </div>
+                    <div class="benefit-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        <h4>Predictability</h4>
+                        <p>Clear timeline and milestones prevent surprises</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header animate animate-fade-up">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                <div class="faq-list animate animate-fade-up">
+                    <div class="faq-item">
+                        <button class="faq-question">How long does a typical project take?<span
+                                class="faq-icon">+</span></button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">Project timelines vary based on complexity. A simple website
+                                may take 4-6 weeks, while a custom ERP system could take 4-6 months. We'll provide a
+                                detailed timeline during the strategy phase.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">How much does a project cost?<span
+                                class="faq-icon">+</span></button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">Costs depend on project scope, complexity, and features. We
+                                provide detailed quotes after the discovery phase. Contact us for a free consultation
+                                and estimate.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What if I need changes during development?<span
+                                class="faq-icon">+</span></button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">Our agile approach accommodates changes. We work in sprints
+                                and gather feedback regularly, allowing adjustments throughout the development process.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Do you provide training?<span class="faq-icon">+</span></button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">Yes! We provide comprehensive training and documentation to
+                                ensure your team can effectively use and manage the new system.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What happens after launch?<span class="faq-icon">+</span></button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">We offer ongoing support and maintenance packages to keep your
+                                solution running smoothly, including monitoring, updates, and continuous improvements.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-dark cta-section">
+            <div class="container">
+                <div class="animate animate-fade-up">
+                    <h2>Ready to Get Started?</h2>
+                    <p>Let's discuss your project and how our process can bring your vision to life</p>
+                    <a href="contact.html" class="btn btn-primary btn-lg">Schedule Your Free Consultation</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/images/footer-logo.png" alt="FoxyTech" class="footer-logo">
+                    <p class="footer-tagline">Transforming businesses through innovative technology solutions.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg></a>
+                        <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                </path>
+                            </svg></a>
+                        <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="services.html" class="footer-link">Services</a></li>
+                        <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+                        <li><a href="blog.html" class="footer-link">Blog</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#enterprise" class="footer-link">ERP Solutions</a></li>
+                        <li><a href="services.html#mobile" class="footer-link">Mobile Apps</a></li>
+                        <li><a href="services.html#digital" class="footer-link">Web Development</a></li>
+                        <li><a href="services.html#marketing" class="footer-link">SEO Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <div class="footer-contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>hello@foxytech.in</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        <span>+91 9141150551</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 FoxyTech. All rights reserved.</p>
+                <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+
+    <script src="js/particles.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/effects.js"></script>
+    <script src="js/scroll-animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
